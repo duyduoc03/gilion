@@ -1,11 +1,5 @@
-const time = new Data();
-nam = time.getFullYear();
-thang = time.getMonth();
-ngay = time.getDate();
-str = ngay + "/" + thang + "/" + nam;
-document.getElementById("date").innerHTML=str;
+// back to top
 
-//back to top
 window.onscroll = function() {scrollFunction()};
           function scrollFunction() {
             if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
