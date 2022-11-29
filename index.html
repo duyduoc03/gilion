@@ -11,7 +11,8 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/c93df1357e.js" crossorigin="anonymous"></script>
-    <script language="script" src="time.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="time.js"></script>
 
     <title>Gilion</title>
 </head>
@@ -39,14 +40,6 @@
                 <li>
                     <div class="date-time">
                       <span id="date"></span>
-                      <script>
-                        var time = new Date();
-                        nam = time.getFullYear();
-                        thang = time.getMonth();
-                        ngay = time.getDate();
-                        str = ngay + "/" + thang + "/" + nam;
-                        document.getElementById("date").innerHTML=str;
-                        </script>
                     </div>
                 </li>
             </ul>
@@ -91,13 +84,14 @@
                             <a href="#">Link 2</a>
                             <a href="#">Link 3</a>
                             <a href="#">Link 4</a>
-                            <a class="dropdown2" href="#">menu
-                              <div class="menu2">
+                            <div class="menu2">
+                              <a href="#">menu <i class="fa-solid fa-ellipsis"></i></a>
+                              <div class="dropdown-content2">
                                 <a href="#">Link 1</a>
                                 <a href="#">Link 2</a>
                                 <a href="#">Link 3</a>
                               </div>
-                            </a>
+                            </div>
                             <a href="#">Link 5</a>
                             <a href="#">Link 6</a>
                             <a href="#">Link 7</a>
@@ -137,8 +131,8 @@
                     </ul>
                   </div>
                   <div class="find_right">
-                    <a href="#"><i class="fa-solid fa-bolt"></i></i></a>
-                    <a href="#"><i class="fa-regular fa-bookmark"></i></i></a>
+                    <a href="#"><i class="fa-solid fa-bolt"></i></a>
+                    <a href="#"><i class="fa-regular fa-bookmark"></i></a>
                   </div>
                 </nav>
             </div>
@@ -146,17 +140,17 @@
           <!--Back to top -->
          <button id="myBtn" title="Back to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
          <div class="grid-container">
-           <div class="grid-item item1" style="background-image: url(https://cdn.gillion.shufflehound.com/wp-content/uploads/sites/15/2019/01/insta-mobile-1024x683.jpg);">
+           <div class="grid-item item1">
              <a href="#" tabindex="0">
                <h2 class="post-title">How Much Time On Social Networks Is Considered Healthy</h2> 
              </a>
            </div>
-           <div class="grid-item item2" style="background-image: url(https://cdn.gillion.shufflehound.com/wp-content/uploads/sites/15/2017/01/11-1024x768.jpg);">
+           <div class="grid-item item2">
              <a href="#" tabindex="0">
                <h2 class="post-title">Smart Watches That Will Make You Spend Some Money</h2> 
              </a>
            </div>
-           <div class="grid-item item3" style="background-image: url(	https://cdn.gillion.shufflehound.com/wp-content/uploads/sites/15/2019/01/blue-sky-girl-1024x1024.jpg);">
+           <div class="grid-item item3">
              <a href="#" tabindex="0">
                <h2 class="post-title">How Fashion Trend Change The Way You Think</h2> 
              </a>
@@ -169,16 +163,16 @@
                   </span>, 
                   <a href="#"> 4 years ago</a> </span> 
                   <a class="a" href="#"> <i class="fa-regular fa-comment"></i> 0 </a> 
-                  <span class="post-readtime"> <i class="fa-regular fa-clock"></i></i> 3 min read</span>
+                  <span class="post-readtime"> <i class="fa-regular fa-clock"></i> 3 min read</span>
               </div>
             </div>
            </div>  
-           <div class="grid-item item4" style="background-image: url(	https://cdn.gillion.shufflehound.com/wp-content/uploads/sites/15/2018/06/c-4-1024x768.jpg);">
+           <div class="grid-item item4">
              <a href="#" tabindex="0">
                <h2 class="post-title">Porsche Cayman Re-style Is On The Way</h2> 
              </a>
            </div>
-           <div class="grid-item item5" style="background-image: url(https://cdn.gillion.shufflehound.com/wp-content/uploads/sites/15/2019/01/camera-blue-1024x683.jpg);">
+           <div class="grid-item item5">
              <a href="#" tabindex="0">
                <h2 class="post-title">Best Cameras To Choose From In 2019</h2> 
              </a>
@@ -186,79 +180,163 @@
           </div>
 
           <!--tocuch slides-->
-          <div id="carouselExampleInterval">
-            <div class="carousel slide" data-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active" data-interval="2000">
-                  <img src="https://cdn.gillion.shufflehound.com/wp-content/uploads/sites/15/2017/01/29-585x372.jpg" class="d-block" alt="...">
-                </div>
-                <div class="carousel-item" data-interval="2000">
-                  <img src="https://cdn.gillion.shufflehound.com/wp-content/uploads/sites/15/2017/01/24-1-585x372.jpg" class="d-block" alt="...">
-                </div>
-                <div class="carousel-item" data-interval="2000">
-                  <img src="https://cdn.gillion.shufflehound.com/wp-content/uploads/sites/15/2016/01/Main_slide-585x372.jpg" class="d-block" alt="...">
-                </div>
-                <div class="carousel-item" data-interval="2000">
-                  <img src="https://cdn.gillion.shufflehound.com/wp-content/uploads/sites/15/2017/01/2-585x372.jpg" class="d-block" alt="...">
-                </div>
-                <div class="carousel-item" data-interval="2000">
-                  <img src="https://cdn.gillion.shufflehound.com/wp-content/uploads/sites/15/2018/06/c-2-585x372.jpg" class="d-block" alt="...">
-                </div>
-                <div class="carousel-item" data-interval="2000">
-                  <img src="https://cdn.gillion.shufflehound.com/wp-content/uploads/sites/15/2017/01/5-1-585x372.jpg" class="d-block" alt="...">
-                </div>
-              </div>
-            </div>
-
-            <div class="carousel slide" data-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active" data-interval="2000">
-                  <img src="https://cdn.gillion.shufflehound.com/wp-content/uploads/sites/15/2017/01/24-1-585x372.jpg" class="d-block" alt="...">
-                </div>
-                <div class="carousel-item" data-interval="2000">
-                  <img src="https://cdn.gillion.shufflehound.com/wp-content/uploads/sites/15/2016/01/Main_slide-585x372.jpg" class="d-block" alt="...">
-                </div>
-                <div class="carousel-item" data-interval="2000">
-                  <img src="https://cdn.gillion.shufflehound.com/wp-content/uploads/sites/15/2017/01/2-585x372.jpg" class="d-block" alt="...">
-                </div>
-                <div class="carousel-item" data-interval="2000">
-                  <img src="https://cdn.gillion.shufflehound.com/wp-content/uploads/sites/15/2018/06/c-2-585x372.jpg" class="d-block" alt="...">
-                </div>
-                <div class="carousel-item" data-interval="2000">
-                  <img src="https://cdn.gillion.shufflehound.com/wp-content/uploads/sites/15/2017/01/5-1-585x372.jpg" class="d-block" alt="...">
-                </div>
-                <div class="carousel-item" data-interval="2000">
-                  <img src="https://cdn.gillion.shufflehound.com/wp-content/uploads/sites/15/2017/01/29-585x372.jpg" class="d-block" alt="...">
-                </div>
-              </div>
-            </div>
-
-            <div class="carousel slide" data-ride="carousel">
-              <div class="carousel-inner">             
-                <div class="carousel-item active" data-interval="2000">
-                  <img src="https://cdn.gillion.shufflehound.com/wp-content/uploads/sites/15/2016/01/Main_slide-585x372.jpg" class="d-block" alt="...">
-                </div>
-                <div class="carousel-item" data-interval="2000">
-                  <img src="https://cdn.gillion.shufflehound.com/wp-content/uploads/sites/15/2017/01/2-585x372.jpg" class="d-block" alt="...">
-                </div>
-                <div class="carousel-item" data-interval="2000">
-                  <img src="https://cdn.gillion.shufflehound.com/wp-content/uploads/sites/15/2018/06/c-2-585x372.jpg" class="d-block" alt="...">
-                </div>
-                <div class="carousel-item" data-interval="2000">
-                  <img src="https://cdn.gillion.shufflehound.com/wp-content/uploads/sites/15/2017/01/5-1-585x372.jpg" class="d-block" alt="...">
-                </div>
-                <div class="carousel-item" data-interval="2000">
-                  <img src="https://cdn.gillion.shufflehound.com/wp-content/uploads/sites/15/2017/01/29-585x372.jpg" class="d-block" alt="...">
-                </div>
-                <div class="carousel-item" data-interval="2000">
-                  <img src="https://cdn.gillion.shufflehound.com/wp-content/uploads/sites/15/2017/01/24-1-585x372.jpg" class="d-block" alt="...">
-                </div>
-              </div>
-              
-            </div>
+          <div class="container-fluid">
+<!--            <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel" data-interval="3000">-->
+<!--              <div class="carousel-item" role="listbox">-->
+<!--                <div class="carousel-item active" >-->
+<!--                  <div class="panel panel-default">-->
+<!--                    <img src="https://gillion.shufflehound.com/news/wp-content/uploads/sites/15/2017/01/24-1-585x372.jpg" alt="slide 1">-->
+<!--                    <div class="carousel-title">-->
+<!--                      <span>beauty</span>-->
+<!--                      <h6> Interview Of Beginner Urban Style Model & Blog Diva </h6>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--                <div class="carousel-item">-->
+<!--                  <div class="panel panel-default">-->
+<!--                    <img src="https://gillion.shufflehound.com/news/wp-content/uploads/sites/15/2017/01/12-1-585x372.jpg" alt="slide 2">-->
+<!--                    <div class="carousel-title">-->
+<!--                      <span>guide</span>-->
+<!--                      <h6> Common Port Problem Of New Laptops </h6>-->
+<!--                    </div>-->
+<!--                  </div>                  -->
+<!--                </div>-->
+<!--                <div class="carousel-item">-->
+<!--                  <div class="panel panel-default">-->
+<!--                    <img src="https://gillion.shufflehound.com/news/wp-content/uploads/sites/15/2017/01/29-585x372.jpg" alt="slide 3">-->
+<!--                    <div class="carousel-title">-->
+<!--                      <span>motivation</span>-->
+<!--                      <h6> Quote of the day #31 </h6>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--                <div class="carousel-item">-->
+<!--                  <div class="panel panel-default">-->
+<!--                    <img src="https://gillion.shufflehound.com/news/wp-content/uploads/sites/15/2017/01/23-585x372.jpg" alt="slide 4">-->
+<!--                    <div class="carousel-title">-->
+<!--                      <span>fashoin</span>-->
+<!--                      <h6> Pair Of Green Sneakers, Style Mistake Or Victory? </h6>-->
+<!--                    </div>-->
+<!--                  </div>    -->
+<!--                </div>-->
+<!--                <div class="carousel-item">-->
+<!--                  <div class="panel panel-default">-->
+<!--                    <img src="https://gillion.shufflehound.com/news/wp-content/uploads/sites/15/2017/01/2-585x372.jpg" alt="slide 5">-->
+<!--                    <div class="carousel-title">-->
+<!--                      <span>beauty</span>-->
+<!--                      <h6> How To Find Good Spots For Nature Inspired Photo-Shoots </h6>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--                <div class="carousel-item">-->
+<!--                  <div class="panel panel-default">-->
+<!--                    <img src="https://gillion.shufflehound.com/news/wp-content/uploads/sites/15/2018/06/c-2-585x372.jpg" alt="slide 6">-->
+<!--                    <div class="carousel-title">-->
+<!--                      <span>cars</span>-->
+<!--                      <h6> Sneak Peak Of Mercedes Benz Interior Update in C-class Sedans </h6>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--                <div class="carousel-item">-->
+<!--                  <div class="panel panel-default">-->
+<!--                    <img src="https://gillion.shufflehound.com/news/wp-content/uploads/sites/15/2018/06/c-2-585x372.jpg" alt="slide 7">-->
+<!--                    <div class="carousel-title">-->
+<!--                      <span>cars</span>-->
+<!--                      <h6> Sneak Peak Of Mercedes Benz Interior Update in C-class Sedans </h6>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--                <div class="carousel-item">-->
+<!--                  <div class="panel panel-default">-->
+<!--                    <img src="https://gillion.shufflehound.com/news/wp-content/uploads/sites/15/2018/06/c-2-585x372.jpg" alt="slide 8">-->
+<!--                    <div class="carousel-title">-->
+<!--                      <span>cars</span>-->
+<!--                      <h6> Sneak Peak Of Mercedes Benz Interior Update in C-class Sedans </h6>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--                <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">-->
+<!--                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
+<!--                    <span class="sr-only">Previous</span>-->
+<!--                </a>-->
+<!--                <a class="carousel-control-next text-faded" href="#carouselExampleInterval" role="button" data-slide="next">-->
+<!--                    <span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+<!--                    <span class="sr-only">Next</span>-->
+<!--                </a>-->
+<!--            </div>-->
           </div>
           <!--end tocuch slides-->
-      </div>
+        <div id="new_post">
+            <div class="post_content">
+                <div class="title_np">
+                    <h2> Todays spotlight</h2>
+                </div>
+                <div id="carouselExampleControls">
+                    <div class="carousel-inner2">
+                      <div class="carousel-item2">
+                        <a href="#"><img src="https://gillion.shufflehound.com/news/wp-content/uploads/sites/15/2017/01/8-1-420x265.jpg"></a>
+                        <h4>
+                            <a href="#"> What’re People Buzzing About? Your Content Should Join The Conversation </a>
+                        </h4>
+                        <div>
+                            <span>
+                                <a href="#" class="post-author">Gillion</a>
+                            </span>, <a href="#"> 6 years ago &nbsp;&nbsp;|&nbsp;&nbsp; </a> </span>
+                            <span class="post-readtime"> <i class="fa-regular fa-clock"></i> 3 min read</span>
+                        </div>
+                      </div>
+                      <div class="carousel-item2">
+                          <a href="#"><img src="https://gillion.shufflehound.com/news/wp-content/uploads/sites/15/2019/01/Girl-drink-420x265.jpg"></a>
+                          <h4>
+                              <a href="#"> Does Coffee Help Deduce Stress Hormone Levels? </a>
+                          </h4>
+                          <div>
+                              <span>
+                                  <a href="#" class="post-author">Gillion</a>
+                              </span>, <a href="#"> 4 years ago &nbsp;&nbsp;|&nbsp;&nbsp; </a> </span>
+                              <span class="post-readtime"> <i class="fa-regular fa-clock"></i> 3 min read</span>
+                          </div>
+                      </div>
+                      <div class="carousel-item2">
+                          <a href="#"><img src="https://gillion.shufflehound.com/news/wp-content/uploads/sites/15/2017/01/27-420x265.jpg"></a>
+                          <h4>
+                              <a href="#"> Review Of Healthy Breakfast Meals For Energy Boost </a>
+                          </h4>
+                          <div>
+                              <span>
+                                  <a href="#" class="post-author">Gillion</a>
+                              </span>, <a href="#"> 5 years ago &nbsp;&nbsp;|&nbsp;&nbsp; </a> </span>
+                              <span class="post-readtime"> <i class="fa-regular fa-clock"></i> 2 min read</span>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="follow_content">
+                <div class="title_np">
+                    <h3>Stay connected</h3>
+                </div>
+                <div class="widget_fl">
+                    <div class="widget-connected-facebook item">
+                        <div class="widget-connected-title inline_bl"> <i class="fa fa-facebook"></i> Like</div>
+                        <div class="widget-connected-count inline_bl"> <span>1423</span></div>
+                    </div>
+                    <div class="widget-connected-twitter item">
+                        <div class="widget-connected-title inline_bl"> <i class="fa fa-twitter"></i> Follow</div>
+                        <div class="widget-connected-count inline_bl"> <span>727</span></div>
+                    </div>
+                    <div class="widget-connected-instagram item">
+                        <div class="widget-connected-title inline_bl"> <i class="fa fa-instagram"></i> Follow</div>
+                        <div class="widget-connected-count inline_bl"> <span>386</span></div>
+                    </div>
+                    <div class="widget-connected-youtube item">
+                        <div class="widget-connected-title inline_bl"> <i class="fa fa-youtube-play"></i> Subscribe</div>
+                        <div class="widget-connected-count inline_bl"> <span>284</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
   </div>
   <div class="footer">
       <div class="content_footer">
@@ -269,7 +347,7 @@
               </div>
             </div>
             <div class="form_footer">
-              <p> <input type="email" name="EMAIL" placeholder="Your email address" required=""></p>
+              <p> <input type="email" name="EMAIL" placeholder="Your email address" required></p>
               <button type="submit"><i class="fa-regular fa-paper-plane"></i></button>
               <p class="widget-quote-description">* You will receive the latest news and updates on your favorite celebrities!</p>
             </div>
@@ -330,6 +408,7 @@
             </div>  
           </div>
       </div>
-  </div> 
+  </div>
+  <script src="time.js"></script> 
 </body>
 </html>
