@@ -5,12 +5,16 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-   
+
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/c93df1357e.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c93df1357e.js" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://npmcdn.com/flickity@2/dist/flickity.css">
+    </script><script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js" crossorigin="anonymous"></script>
     <script src="time.js"></script>
 
     <title>Gillion</title>
@@ -184,10 +188,9 @@
           </div>
 
           <!--tocuch slides-->
-          <div class="container-fluid">
-            <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel" data-interval="3000">
-              <div class="carousel-item" role="listbox">
-                <div class="carousel-item active" >
+            <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="3000">
+              <div class="carousel-inner row w-100 mx-auto">
+                <div class="carousel-item col-md-3  active">
                   <div class="panel panel-default">
                     <img src="https://gillion.shufflehound.com/news/wp-content/uploads/sites/15/2017/01/24-1-585x372.jpg" alt="slide 1">
                     <div class="carousel-title">
@@ -196,7 +199,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item col-md-3">
                   <div class="panel panel-default">
                     <img src="https://gillion.shufflehound.com/news/wp-content/uploads/sites/15/2017/01/12-1-585x372.jpg" alt="slide 2">
                     <div class="carousel-title">
@@ -205,7 +208,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item col-md-3 ">
                   <div class="panel panel-default">
                     <img src="https://gillion.shufflehound.com/news/wp-content/uploads/sites/15/2017/01/29-585x372.jpg" alt="slide 3">
                     <div class="carousel-title">
@@ -214,7 +217,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item col-md-3 ">
                   <div class="panel panel-default">
                     <img src="https://gillion.shufflehound.com/news/wp-content/uploads/sites/15/2017/01/23-585x372.jpg" alt="slide 4">
                     <div class="carousel-title">
@@ -223,7 +226,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item col-md-3 ">
                   <div class="panel panel-default">
                     <img src="https://gillion.shufflehound.com/news/wp-content/uploads/sites/15/2017/01/2-585x372.jpg" alt="slide 5">
                     <div class="carousel-title">
@@ -232,7 +235,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item col-md-3 ">
                   <div class="panel panel-default">
                     <img src="https://gillion.shufflehound.com/news/wp-content/uploads/sites/15/2018/06/c-2-585x372.jpg" alt="slide 6">
                     <div class="carousel-title">
@@ -241,131 +244,167 @@
                     </div>
                   </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item col-md-3 ">
                   <div class="panel panel-default">
-                    <img src="https://gillion.shufflehound.com/news/wp-content/uploads/sites/15/2018/06/c-2-585x372.jpg" alt="slide 7">
+                    <img src="https://gillion.shufflehound.com/news/wp-content/uploads/sites/15/2017/01/5-1-585x372.jpg" alt="slide 7">
                     <div class="carousel-title">
-                      <span>cars</span>
-                      <h6> Sneak Peak Of Mercedes Benz Interior Update in C-class Sedans </h6>
+                      <span>lifestyle</span>
+                      <h6> White Stairway. Architectural marvel! </h6>
                     </div>
                   </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item col-md-3 ">
                   <div class="panel panel-default">
-                    <img src="https://gillion.shufflehound.com/news/wp-content/uploads/sites/15/2018/06/c-2-585x372.jpg" alt="slide 8">
+                    <img src="https://gillion.shufflehound.com/news/wp-content/uploads/sites/15/2016/01/Main_slide-585x372.jpg" alt="slide 8">
                     <div class="carousel-title">
-                      <span>cars</span>
-                      <h6> Sneak Peak Of Mercedes Benz Interior Update in C-class Sedans </h6>
+                      <span>beauty</span>
+                      <h6> Lesson 1: Basics Of Photography With Natural Lighting </h6>
                     </div>
                   </div>
                 </div>
               </div>
-
             </div>
-          </div>
           <!--end tocuch slides-->
-        <div id="new_post">
-            <div class="post_content">
-                <div class="title_np">
-                    <h2> Todays spotlight</h2>
-                </div>
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner box_fl">
-                      <div class="carousel-item active box_content">
-                        <a href="#"><img class="d-block" src="https://gillion.shufflehound.com/news/wp-content/uploads/sites/15/2017/01/8-1-420x265.jpg"></a>
-                        <h4>
-                            <a href="#"> What're People Buzzing About? Your Content Should Join The Conversation </a>
-                        </h4>
-                        <div>
-                            <span>
-                                <a href="#" class="post-author">Gillion</a>
-                            </span>, <a href="#"> 6 years ago &nbsp;&nbsp;|&nbsp;&nbsp; </a> </span>
-                            <span class="post-readtime"> <i class="fa-regular fa-clock"></i> 3 min read</span>
-                        </div>
-                      </div>
-                      <div class="carousel-item box_content">
-                          <a href="#"><img class="d-block" src="https://gillion.shufflehound.com/news/wp-content/uploads/sites/15/2019/01/Girl-drink-420x265.jpg"></a>
-                          <h4>
-                              <a href="#"> Does Coffee Help Deduce Stress Hormone Levels? </a>
-                          </h4>
-                          <div>
-                              <span>
-                                  <a href="#" class="post-author">Gillion</a>
-                              </span>, <a href="#"> 4 years ago &nbsp;&nbsp;|&nbsp;&nbsp; </a> </span>
-                              <span class="post-readtime"> <i class="fa-regular fa-clock"></i> 3 min read</span>
-                          </div>
-                      </div>
-                      <div class="carousel-item box_content">
-                          <a href="#"><img class="d-block" src="https://gillion.shufflehound.com/news/wp-content/uploads/sites/15/2017/01/27-420x265.jpg"></a>
-                          <h4>
-                              <a href="#"> Review Of Healthy Breakfast Meals For Energy Boost </a>
-                          </h4>
-                          <div>
-                              <span>
-                                  <a href="#" class="post-author">Gillion</a>
-                              </span>, <a href="#"> 5 years ago &nbsp;&nbsp;|&nbsp;&nbsp; </a> </span>
-                              <span class="post-readtime"> <i class="fa-regular fa-clock"></i> 2 min read</span>
-                          </div>
-                      </div>
-                      <div class="carousel-item box_content">
-                        <a href="#"><img class="d-block" src="https://gillion.shufflehound.com/news/wp-content/uploads/sites/15/2017/01/27-420x265.jpg"></a>
-                        <h4>
-                            <a href="#"> Review Of Healthy Breakfast Meals For Energy Boost </a>
-                        </h4>
-                        <div>
-                            <span>
-                                <a href="#" class="post-author">Gillion</a>
-                            </span>, <a href="#"> 5 years ago &nbsp;&nbsp;|&nbsp;&nbsp; </a> </span>
-                            <span class="post-readtime"> <i class="fa-regular fa-clock"></i> 2 min read</span>
-                        </div>
-                      </div>
-                      <div class="carousel-item box_content">
-                        <a href="#"><img class="d-block" src="https://gillion.shufflehound.com/news/wp-content/uploads/sites/15/2017/01/27-420x265.jpg"></a>
-                        <h4>
-                            <a href="#"> Review Of Healthy Breakfast Meals For Energy Boost </a>
-                        </h4>
-                        <div>
-                            <span>
-                                <a href="#" class="post-author">Gillion</a>
-                            </span>, <a href="#"> 5 years ago &nbsp;&nbsp;|&nbsp;&nbsp; </a> </span>
-                            <span class="post-readtime"> <i class="fa-regular fa-clock"></i> 2 min read</span>
-                        </div>
-                      </div>
+          <!--new post slides-->
+            <div id="new_post">
+                <div class="post_content">
+                    <div class="title_np">
+                        <h2> Todays spotlight</h2>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Next</span>
-                    </button>
+
+                    <div id="groupCells">
+                        <div class="carousel" data-flickity>
+                          <div class="carousel-cell box_content">
+                            <a href="#">
+                                <img class="d-block" src="https://gillion.shufflehound.com/news/wp-content/uploads/sites/15/2017/01/8-1-420x265.jpg">
+                                <span class="c"><i class="fa-solid fa-ellipsis"></i></span>
+                            </a>
+                            <a href="#" class="post_title">
+                                <h4>  What're People Buzzing About? Your Content Should Join The Conversation
+                                    <span class="post-read-later post-read-later-guest tooltipstered" href="#" data-type="add" data-id="402"><i class="fa fa-bookmark-o"></i></span>
+                                </h4>
+                            </a>
+                            <div>
+                                <span>
+                                    <a href="#" class="post-author">Gillion</a>
+                                </span>, <a href="#"> 6 years ago &nbsp;&nbsp;|&nbsp;&nbsp; </a> </span>
+                                <span class="post-readtime"> <i class="fa-regular fa-clock"></i> 3 min read</span>
+                            </div>
+                          </div>
+                          <div class="carousel-cell box_content">
+                              <a href="#">
+                                  <img class="d-block" src="https://gillion.shufflehound.com/news/wp-content/uploads/sites/15/2019/01/Girl-drink-420x265.jpg">
+                                  <span class="c"><i class="fa-solid fa-ellipsis"></i></span>
+                              </a>
+                              <a href="#" class="post_title">
+                                  <h4>  Does Coffee Help Deduce Stress Hormone Levels?
+                                      <span class="post-read-later post-read-later-guest tooltipstered" href="#" data-type="add" data-id="402"><i class="fa fa-bookmark-o"></i></span>
+                                  </h4>
+                              </a>
+                              <div>
+                                  <span>
+                                      <a href="#" class="post-author">Gillion</a>
+                                  </span>, <a href="#"> 4 years ago &nbsp;&nbsp;|&nbsp;&nbsp; </a> </span>
+                                  <span class="post-readtime"> <i class="fa-regular fa-clock"></i> 3 min read</span>
+                              </div>
+                          </div>
+                          <div class="carousel-cell box_content">
+                              <a href="#">
+                                  <img class="d-block" src="https://gillion.shufflehound.com/news/wp-content/uploads/sites/15/2017/01/27-420x265.jpg">
+                                  <span class="c"><i class="fa-solid fa-ellipsis"></i></span>
+                              </a>
+                              <a href="#" class="post_title">
+                                  <h4> Review Of Healthy Breakfast Meals For Energy Boost
+                                      <span class="post-read-later post-read-later-guest tooltipstered" href="#" data-type="add" data-id="402"><i class="fa fa-bookmark-o"></i></span>
+                                  </h4>
+                              </a>
+                              <div>
+                                  <span>
+                                      <a href="#" class="post-author">Gillion</a>
+                                  </span>, <a href="#"> 5 years ago &nbsp;&nbsp;|&nbsp;&nbsp; </a> </span>
+                                  <span class="post-readtime"> <i class="fa-regular fa-clock"></i> 2 min read</span>
+                              </div>
+                          </div>
+                            <div class="carousel-cell box_content">
+                                <a href="#">
+                                    <img class="d-block" src="https://gillion.shufflehound.com/news/wp-content/uploads/sites/15/2017/01/9-1-420x265.jpg">
+                                    <span class="c"><i class="fa-solid fa-ellipsis"></i></span>
+                                </a>
+                                <a href="#" class="post_title">
+                                    <h4>  New Coffee Place You Have To Visit
+                                        <span class="post-read-later post-read-later-guest tooltipstered" href="#" data-type="add" data-id="402"><i class="fa fa-bookmark-o"></i></span>
+                                    </h4>
+                                </a>
+                                <div>
+                                  <span>
+                                      <a href="#" class="post-author">Gillion</a>
+                                  </span>, <a href="#"> 6 years ago &nbsp;&nbsp;|&nbsp;&nbsp; </a> </span>
+                                    <span class="post-readtime"> <i class="fa-regular fa-clock"></i> 3 min read</span>
+                                </div>
+                            </div>
+                            <div class="carousel-cell box_content">
+                                <a href="#">
+                                    <img class="d-block" src="https://gillion.shufflehound.com/news/wp-content/uploads/sites/15/2017/01/22-420x265.jpg">
+                                    <span class="c"><i class="fa-solid fa-ellipsis"></i></span>
+                                </a>
+                                <a href="#" class="post_title">
+                                    <h4> 5 Ways Animals Will Help You Get More Business
+                                        <span class="post-read-later post-read-later-guest tooltipstered" href="#" data-type="add" data-id="402"><i class="fa fa-bookmark-o"></i></span>
+                                    </h4>
+                                </a>
+                                <div>
+                                  <span>
+                                      <a href="#" class="post-author">Gillion</a>
+                                  </span>, <a href="#"> 6 years ago &nbsp;&nbsp;|&nbsp;&nbsp; </a> </span>
+                                    <span class="post-readtime"> <i class="fa-regular fa-clock"></i> 3 min read</span>
+                                </div>
+                            </div>
+                            <div class="carousel-cell box_content">
+                                <a href="#">
+                                    <img class="d-block" src="https://gillion.shufflehound.com/news/wp-content/uploads/sites/15/2017/01/6-1-420x265.jpg">
+                                    <span class="c"><i class="fa-solid fa-ellipsis"></i></span>
+                                </a>
+                                <a href="#" class="post_title">
+                                    <h4> How To Climb The Career Latter And Don’t Waste Your Youth
+                                        <span class="post-read-later post-read-later-guest tooltipstered" href="#" data-type="add" data-id="402"><i class="fa fa-bookmark-o"></i></span>
+                                    </h4>
+                                </a>
+                                <div>
+                                  <span>
+                                      <a href="#" class="post-author">Gillion</a>
+                                  </span>, <a href="#"> 6 years ago &nbsp;&nbsp;|&nbsp;&nbsp; </a> </span>
+                                    <span class="post-readtime"> <i class="fa-regular fa-clock"></i> 2 min read</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="follow_content">
+                    <div class="title_np">
+                        <h3>Stay connected</h3>
+                    </div>
+                    <div class="widget_fl">
+                        <div class="widget-connected-facebook item">
+                            <div class="widget-connected-title inline_bl"> <i class="fa fa-facebook"></i> Like</div>
+                            <div class="widget-connected-count inline_bl"> <span>1423</span></div>
+                        </div>
+                        <div class="widget-connected-twitter item">
+                            <div class="widget-connected-title inline_bl"> <i class="fa fa-twitter"></i> Follow</div>
+                            <div class="widget-connected-count inline_bl"> <span>727</span></div>
+                        </div>
+                        <div class="widget-connected-instagram item">
+                            <div class="widget-connected-title inline_bl"> <i class="fa fa-instagram"></i> Follow</div>
+                            <div class="widget-connected-count inline_bl"> <span>386</span></div>
+                        </div>
+                        <div class="widget-connected-youtube item">
+                            <div class="widget-connected-title inline_bl"> <i class="fa fa-youtube-play"></i> Subscribe</div>
+                            <div class="widget-connected-count inline_bl"> <span>284</span></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="follow_content">
-                <div class="title_np">
-                    <h3>Stay connected</h3>
-                </div>
-                <div class="widget_fl">
-                    <div class="widget-connected-facebook item">
-                        <div class="widget-connected-title inline_bl"> <i class="fa fa-facebook"></i> Like</div>
-                        <div class="widget-connected-count inline_bl"> <span>1423</span></div>
-                    </div>
-                    <div class="widget-connected-twitter item">
-                        <div class="widget-connected-title inline_bl"> <i class="fa fa-twitter"></i> Follow</div>
-                        <div class="widget-connected-count inline_bl"> <span>727</span></div>
-                    </div>
-                    <div class="widget-connected-instagram item">
-                        <div class="widget-connected-title inline_bl"> <i class="fa fa-instagram"></i> Follow</div>
-                        <div class="widget-connected-count inline_bl"> <span>386</span></div>
-                    </div>
-                    <div class="widget-connected-youtube item">
-                        <div class="widget-connected-title inline_bl"> <i class="fa fa-youtube-play"></i> Subscribe</div>
-                        <div class="widget-connected-count inline_bl"> <span>284</span></div>
-                    </div>
-                </div>
-            </div>
-        </div>
+          <!--end post slide-->
+          <!--newest-->
             <div id="newest">
                     <div class="new_content">
                         <div class="title_np">
@@ -511,12 +550,58 @@
                             </div>
                         </div>
                     </div>
-                    <div class="subscribe">
-                        <div class="title_np">
-                            <h3>Subscribe for newsletter</h3>
+                <div class="subscribe">
+                    <div class="title_np">
+                        <h3>Subscribe for newsletter</h3>
+                    </div>
+                    <div class="form_content">
+                        <p> <input type="email" name="EMAIL" placeholder="Your email address" required></p>
+                        <button type="submit"><i class="fa-regular fa-paper-plane"></i></button>
+                        <p class="widget-quote-description">* You will receive the latest news and updates on your favorite celebrities!</p>
+                    </div>
+                    <div class="title_np fix ">
+                        <h3>Life Hacks</h3>
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#menu1">Menu 1</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content">
+                        <div id="home" class="tab-pane active">
+                            <div>
+                                <div class="grid-item-x i11 hw">
+                                </div>
+                                <a href="#" class="post_title">
+                                    <h2 class="sz1"> Tips & Trick For Healthy Glowing Skin
+                                        <span class="post-read-later post-read-later-guest tooltipstered" href="#" data-type="add" data-id="402"><i class="fa fa-bookmark-o"></i></span>
+                                    </h2>
+                                </a>
+                            </div>
+                            <div class="comment">
+                    <span>
+                        <a href="#" class="post-author">Gillion</a>
+                    </span>,
+                                <a href="#">4 years ago </a>
+                                <a class="a" href="#"> <i class="fa-regular fa-comment"></i> 0 </a>
+                                <span class="post-readtime"> <i class="fa-regular fa-clock"></i> 1 min read</span>
+                            </div>
+                            <div class="txt1">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam laoreet, nunc et accumsan cursus, neque eros sodales lectus, in fermentum…</p>
+                            </div>
+                        </div>
+
+                        <div id="menu1" class="container tab-pane fade"><br>
+                            <h3>Menu 1</h3>
+                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                         </div>
                     </div>
                 </div>
+            </div>
+          <!--newest-->
         </div>
   </div>
   <div class="footer">
