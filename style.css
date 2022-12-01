@@ -6,6 +6,7 @@ body{
     background: #FAFAFA;
 }
 .header{
+    filter: brightness(90%);
     background-color: black;
     display: flex;
     justify-content:space-between;
@@ -433,15 +434,14 @@ img{
     font-size: 20px;
 }
 
-#groupCells .carousel {
+#groupCells > .carousel {
     outline: none;
     overflow: hidden;
 }
-.flickity-viewport{
+#groupCells .flickity-viewport{
     position: relative;
     left: -34.2%;
 }
-
 .flickity-prev-next-button {
     margin-top: 30px;
     width: 32px;
@@ -495,11 +495,18 @@ img{
       display: block;
       position: absolute;
       top: 0;
+      cursor: pointer
    }
-  .c i{
-      margin-top: 80px;
+#groupCells .c i{
+      margin-top: 85px;
   }
-  .box_content a:hover span{
+.grid-item-x .c i{
+    margin-top: 111px;
+}
+.carousel-cell .c i{
+    margin-top: 75px;
+}
+  .box_content a:hover span, .grid-item-x:hover span{
       background: linear-gradient(
               rgba(0, 0, 0, 0.3),
               rgba(0, 0, 0, 0.3));
@@ -586,6 +593,7 @@ img{
 }
 
 .grid-item-x {
+    text-align: center;
     padding: 0;
     border-radius: 10px;
     background-position: center;
@@ -653,6 +661,25 @@ img{
 .i11 {
     background:url(https://gillion.shufflehound.com/news/wp-content/uploads/sites/15/2017/01/19-420x265.jpg);
 }
+.i12 {
+    background:url(https://gillion.shufflehound.com/news/wp-content/uploads/sites/15/2017/01/26-420x265.jpg);
+}
+.i13 {
+    background:url(https://gillion.shufflehound.com/news/wp-content/uploads/sites/15/2017/01/30-420x265.jpg);
+}
+.i14 {
+    background:url(https://gillion.shufflehound.com/news/wp-content/uploads/sites/15/2017/01/20-1-420x265.jpg);
+}
+.i15 {
+    background:url(https://gillion.shufflehound.com/news/wp-content/uploads/sites/15/2019/01/insta-mobile-420x265.jpg);
+}
+.i16 {
+    background:url(https://gillion.shufflehound.com/news/wp-content/uploads/sites/15/2019/01/Girl-drink-420x265.jpg);
+}
+.i17 {
+    background:url(https://gillion.shufflehound.com/news/wp-content/uploads/sites/15/2017/01/27-420x265.jpg);
+}
+
 .post_title {
     display: block;
     word-break: break-word;
@@ -740,16 +767,56 @@ img{
 #home{
     padding: 0;
     margin: 0 !important;
+    overflow: hidden;
+    outline: none;
 }
+#home .flickity-viewport{
+    position: relative;
+    left: 0;
+}
+#home .carousel-cell{
+    -webkit-transition: 0.9s ease-in-out left;
+    -moz-transition: 0.9s ease-in-out left;
+    -o-transition: 0.9s ease-in-out left;
+    transition: 0.9s ease-in-out left;
+}
+
 .hw{
     height: 180px !important;
 }
 .sz1{
-    font-size: 15px !important;
+    font-size: 17px !important;
+}
+.sz1:hover {
+    color: rgba(51, 51, 51, 0.682) !important;
+}
+.cmt1 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.txt1 {
+    font-size: 13px;
+}
+.nav-item a {
+    font-size: 12px;
+    padding: 2px 5px !important;
+    margin-right: 7px;
+    font-style: normal;
+    color: #333;
+}
+.nav-item a.active {
+    border-radius: 5px !important;
+    border: 1px solid rgb(236, 233, 233) !important;
+    font-weight: bold;
+}
+.nav-item a:hover {
+    color: #333;
+    border: none;
 }
 
 /* footter  --------------------------------------------------------------------- */
 .footer{
+  filter: brightness(95%);
   padding: 30px 0 70px;
   background-image: linear-gradient(
           rgba(0, 0, 0, 0.6),
@@ -827,9 +894,14 @@ img{
 .txt{
   text-align: left;
 }
-.post-title{
-  font-size: 14px;
-  letter-spacing:1px;
+.post_title h5 {
+    font-size: 15px;
+    letter-spacing: 1px;
+    display: inline-block;
+    color: white;
+}
+.post_title h5 i{
+    font-size: 12px;
 }
 .post-date a{
   color: #e3e3e3;
@@ -837,7 +909,7 @@ img{
 }
 .post-date a:hover{
   color:#337ab7;
-
+    text-decoration: none;
 }
 .post-date a:first-child{
   border-right: 1px solid #e3e3e3;
