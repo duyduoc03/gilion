@@ -11,10 +11,11 @@
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/c93df1357e.js" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/c93df1357e.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="https://npmcdn.com/flickity@2/dist/flickity.css">
-    </script><script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js" crossorigin="anonymous"></script>
+    <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js" crossorigin="anonymous"></script>
+
     <script src="time.js"></script>
 
     <title>Gillion</title>
@@ -38,7 +39,7 @@
                 <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
                 <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
                 <li>
-                    <div class="boder_radius"><a href="#">login</a></div>
+                    <span class="boder_radius"><a href="#">LOG IN</a></span>
                 </li>
                 <li>
                     <div class="date-time">
@@ -50,10 +51,17 @@
         </div>
   </div>
     <div class="container">
+        <div id='show'>
+            <a href="#"><i class="fa-solid fa-g"></i></a>
+            <a href="#"><i class="fa-regular fa-newspaper"></i></a>
+            <a href="#"><i class="fa-regular fa-comments"></i></a>
+            <a href="#"><i class="fa-regular fa-life-ring"></i></a>
+            <a href="#"><i class="fa-regular fa-envelope"></i></a>
+        </div>
         <div class="content">
             <div>
                 <div class="logo_main">
-                    <img src="news-logo.png">
+                    <img src="news-logo.png" alt=".">
                 </div>
             </div>
             <div class="find">
@@ -69,7 +77,15 @@
                           <button class="dropbtn">Home<i class="fa-solid fa-ellipsis-vertical"></i></button>
                           <div class="dropdown-content">
                             <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
+                              <div class="menu2">
+                                  <a href="#">Link 2 <i class="fa-solid fa-ellipsis"></i></a>
+                                  <div class="dropdown-content2">
+                                      <a href="#">Link 1</a>
+                                      <a href="#">Link 2</a>
+                                      <a href="#">Link 3</a>
+                                      <a href="#">Link 4</a>
+                                  </div>
+                              </div>
                             <a href="#">Link 3</a>
                             <a href="#">Link 4</a>
                             <a href="#">News</a>
@@ -85,10 +101,18 @@
                           <div class="dropdown-content">
                             <a href="#">Link 1</a>
                             <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
+                              <div class="menu2">
+                                  <a href="#">Link 3 <i class="fa-solid fa-ellipsis"></i></a>
+                                  <div class="dropdown-content2">
+                                      <a href="#">Link 1</a>
+                                      <a href="#">Link 2</a>
+                                      <a href="#">Link 3</a>
+                                      <a href="#">Link 4</a>
+                                  </div>
+                              </div>
                             <a href="#">Link 4</a>
                             <div class="menu2">
-                              <a href="#">menu <i class="fa-solid fa-ellipsis"></i></a>
+                              <a href="#">Menu <i class="fa-solid fa-ellipsis"></i></a>
                               <div class="dropdown-content2">
                                 <a href="#">Link 1</a>
                                 <a href="#">Link 2</a>
@@ -107,7 +131,13 @@
                           <div class="dropdown-content">
                             <a href="#">Link 1</a>
                             <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
+                              <div class="menu2">
+                                  <a href="#">Link 3 <i class="fa-solid fa-ellipsis"></i></a>
+                                  <div class="dropdown-content2">
+                                      <a href="#">Link 1</a>
+                                      <a href="#">Link 2</a>
+                                  </div>
+                              </div>
                           </div>
                         </div>
                       </li>
@@ -281,7 +311,7 @@
                             </a>
                             <a href="#" class="post_title">
                                 <h4>  What're People Buzzing About? Your Content Should Join The Conversation
-                                    <span class="post-read-later post-read-later-guest tooltipstered" href="#" data-type="add" data-id="402"><i class="fa fa-bookmark-o"></i></span>
+                                    <span class="post-read-later post-read-later-guest " href="#" data-type="add" data-id="402"><i class="fa fa-bookmark-o"></i></span>
                                 </h4>
                             </a>
                             <div>
@@ -298,7 +328,7 @@
                               </a>
                               <a href="#" class="post_title">
                                   <h4>  Does Coffee Help Deduce Stress Hormone Levels?
-                                      <span class="post-read-later post-read-later-guest tooltipstered" href="#" data-type="add" data-id="402"><i class="fa fa-bookmark-o"></i></span>
+                                      <span class="post-read-later post-read-later-guest " href="#" data-type="add" data-id="402"><i class="fa fa-bookmark-o"></i></span>
                                   </h4>
                               </a>
                               <div>
@@ -315,7 +345,7 @@
                               </a>
                               <a href="#" class="post_title">
                                   <h4> Review Of Healthy Breakfast Meals For Energy Boost
-                                      <span class="post-read-later post-read-later-guest tooltipstered" href="#" data-type="add" data-id="402"><i class="fa fa-bookmark-o"></i></span>
+                                      <span class="post-read-later post-read-later-guest " href="#" data-type="add" data-id="402"><i class="fa fa-bookmark-o"></i></span>
                                   </h4>
                               </a>
                               <div>
@@ -332,7 +362,7 @@
                                 </a>
                                 <a href="#" class="post_title">
                                     <h4>  New Coffee Place You Have To Visit
-                                        <span class="post-read-later post-read-later-guest tooltipstered" href="#" data-type="add" data-id="402"><i class="fa fa-bookmark-o"></i></span>
+                                        <span class="post-read-later post-read-later-guest " href="#" data-type="add" data-id="402"><i class="fa fa-bookmark-o"></i></span>
                                     </h4>
                                 </a>
                                 <div>
@@ -349,7 +379,7 @@
                                 </a>
                                 <a href="#" class="post_title">
                                     <h4> 5 Ways Animals Will Help You Get More Business
-                                        <span class="post-read-later post-read-later-guest tooltipstered" href="#" data-type="add" data-id="402"><i class="fa fa-bookmark-o"></i></span>
+                                        <span class="post-read-later post-read-later-guest " href="#" data-type="add" data-id="402"><i class="fa fa-bookmark-o"></i></span>
                                     </h4>
                                 </a>
                                 <div>
@@ -366,7 +396,7 @@
                                 </a>
                                 <a href="#" class="post_title">
                                     <h4> How To Climb The Career Latter And Don’t Waste Your Youth
-                                        <span class="post-read-later post-read-later-guest tooltipstered" href="#" data-type="add" data-id="402"><i class="fa fa-bookmark-o"></i></span>
+                                        <span class="post-read-later post-read-later-guest " href="#" data-type="add" data-id="402"><i class="fa fa-bookmark-o"></i></span>
                                     </h4>
                                 </a>
                                 <div>
@@ -404,6 +434,68 @@
                 </div>
             </div>
           <!--end post slide-->
+          <!--Start Tech slides-->
+            <div id="tech-slides">
+                <div class="title_np">
+                    <h2> Tech & Gadgets </h2>
+                </div>
+                <div class="tech-grid">
+                    <div class="grid-item-tech item20">
+                        <div class="ps_tech">
+                            <span class="abc">Gadgets</span>
+                            <a href="#" tabindex="0" class="post_title">
+                                <h1> Coolest Gaming Rig With NZXT Cooling System
+                                    <span class="post-read-later post-read-later-guest "><i class="fa fa-bookmark-o"></i></span>
+                                </h1>
+                            </a>
+                            <div class="post-meta">
+                              <span>
+                                <a href="#" class="post-author">Gillion</a>,
+                                <a href="#"> 6 years ago</a>
+                              </span>
+                                <a class="a" href="#"> <i class="fa-regular fa-comment"></i> 1</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-item-tech item21">
+                        <div class="ps_tech">
+                            <span class="abc">News</span>
+                            <a href="#" tabindex="0" class="post_title">
+                                <h1> Most Impressive Hacker Attack in 2018
+                                    <span class="post-read-later post-read-later-guest "><i class="fa fa-bookmark-o"></i></span>
+                                </h1>
+                            </a>
+                            <div class="post-meta">
+                              <span>
+                                <a href="#" class="post-author">Gillion</a>,
+                                <a href="#"> 4 years ago</a>
+                              </span>
+                                <a class="a" href="#"> <i class="fa-regular fa-comment"></i> 0</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-item-tech item22">
+                        <div class="ps_tech">
+                            <span class="abc">Cars</span>
+                            <a href="#" tabindex="0" class="post_title">
+                                <h1> What You Need To Know About New Speed Limit Restrictions
+                                    <span class="post-read-later post-read-later-guest "><i class="fa fa-bookmark-o"></i></span>
+                                </h1>
+                            </a>
+                            <div class="post-meta">
+                              <span>
+                                <a href="#" class="post-author">Gillion</a>,
+                                <a href="#"> 6 years ago</a>
+                              </span>
+                                <a class="a" href="#"> <i class="fa-regular fa-comment"></i> 2</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          <!--End Tech slides-->
           <!--newest-->
             <div id="newest">
                     <div class="new_content">
@@ -421,7 +513,7 @@
                                 <div>
                                     <a href="#" class="post_title">
                                         <h2> Review Of Photoshop CC Editing Techniques
-                                            <span class="post-read-later post-read-later-guest tooltipstered" href="#" data-type="add" data-id="402"><i class="fa fa-bookmark-o"></i></span>
+                                            <span class="post-read-later post-read-later-guest " href="#" data-type="add" data-id="402"><i class="fa fa-bookmark-o"></i></span>
                                         </h2>
                                     </a>
                                 </div>
@@ -445,7 +537,7 @@
                                 <div>
                                     <a href="#" class="post_title">
                                         <h2>Smart Watches That Will Make You Spend Some Money
-                                            <span class="post-read-later post-read-later-guest tooltipstered" href="#login-register" data-type="add" data-id="402"><i class="fa fa-bookmark-o"></i></span>
+                                            <span class="post-read-later post-read-later-guest " href="#login-register" data-type="add" data-id="402"><i class="fa fa-bookmark-o"></i></span>
                                         </h2>
                                     </a>
                                 </div>
@@ -469,7 +561,7 @@
                                 <div>
                                     <a href="#" class="post_title">
                                         <h2>How Much Time On Social Networks Is Considered Healthy
-                                            <span class="post-read-later post-read-later-guest tooltipstered" href="#login-register" data-type="add" data-id="402"><i class="fa fa-bookmark-o"></i></span>
+                                            <span class="post-read-later post-read-later-guest " href="#login-register" data-type="add" data-id="402"><i class="fa fa-bookmark-o"></i></span>
                                         </h2>
                                     </a>
                                 </div>
@@ -493,7 +585,7 @@
                                 <div>
                                     <a href="#" class="post_title">
                                         <h2>Best Portable Bluetooth Speakers In 2018
-                                            <span class="post-read-later post-read-later-guest tooltipstered" href="#login-register" data-type="add" data-id="402"><i class="fa fa-bookmark-o"></i></span>
+                                            <span class="post-read-later post-read-later-guest " href="#login-register" data-type="add" data-id="402"><i class="fa fa-bookmark-o"></i></span>
                                         </h2>
                                     </a>
                                 </div>
@@ -517,7 +609,7 @@
                                 <div>
                                     <a href="#" class="post_title">
                                         <h2> Pair Of Green Sneakers, Style Mistake Or Victory?
-                                            <span class="post-read-later post-read-later-guest tooltipstered" href="#login-register" data-type="add" data-id="402"><i class="fa fa-bookmark-o"></i></span>
+                                            <span class="post-read-later post-read-later-guest " href="#login-register" data-type="add" data-id="402"><i class="fa fa-bookmark-o"></i></span>
                                         </h2>
                                     </a>
                                 </div>
@@ -541,7 +633,7 @@
                                 <div>
                                     <a href="#" class="post_title">
                                         <h2> How To Start Running Like A Pro
-                                            <span class="post-read-later post-read-later-guest tooltipstered"><i class="fa fa-bookmark-o"></i></span>
+                                            <span class="post-read-later post-read-later-guest "><i class="fa fa-bookmark-o"></i></span>
                                         </h2>
                                     </a>
                                 </div>
@@ -572,7 +664,7 @@
                                 <a class="nav-link active" data-toggle="tab" href="#home">People</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#menu1">Health</a>
+                                <a class="nav-link" data-toggle="tab" href="#health">Health</a>
                             </li>
                         </ul>
                     </div>
@@ -584,7 +676,7 @@
                                 </div>
                                 <a href="#" class="post_title">
                                     <h2 class="sz1"> Tips & Trick For Healthy Glowing Skin
-                                        <span class="post-read-later post-read-later-guest tooltipstered" href="#" data-type="add" data-id="402"><i class="fa fa-bookmark-o"></i></span>
+                                        <span class="post-read-later post-read-later-guest " href="#" data-type="add" data-id="402"><i class="fa fa-bookmark-o"></i></span>
                                     </h2>
                                 </a>
                                 <div class="comment cmt1">
@@ -605,7 +697,7 @@
                                 </div>
                                 <a href="#" class="post_title">
                                     <h2 class="sz1"> Tips & Trick For Healthy Glowing Skin
-                                        <span class="post-read-later post-read-later-guest tooltipstered" href="#" data-type="add" data-id="402"><i class="fa fa-bookmark-o"></i></span>
+                                        <span class="post-read-later post-read-later-guest " href="#" data-type="add" data-id="402"><i class="fa fa-bookmark-o"></i></span>
                                     </h2>
                                 </a>
                                 <div class="comment cmt1">
@@ -626,7 +718,7 @@
                                 </div>
                                 <a href="#" class="post_title">
                                     <h2 class="sz1"> Tips & Trick For Healthy Glowing Skin
-                                        <span class="post-read-later post-read-later-guest tooltipstered" href="#" data-type="add" data-id="402"><i class="fa fa-bookmark-o"></i></span>
+                                        <span class="post-read-later post-read-later-guest " href="#" data-type="add" data-id="402"><i class="fa fa-bookmark-o"></i></span>
                                     </h2>
                                 </a>
                                 <div class="comment cmt1">
@@ -641,14 +733,14 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="health" class="container tab-pane fade main-carousel" data-flickity='{ "pageDots": false}'><br>
+                        <div id="health" class="tab-pane fade carousel" data-flickity='{ "pageDots": false}'>
                             <div class="carousel-cell">
                                 <div class="grid-item-x i15 hw">
                                     <span class="c"><i class="fa-solid fa-ellipsis"></i></span>
                                 </div>
                                 <a href="#" class="post_title">
                                     <h2 class="sz1"> Tips & Trick For Healthy Glowing Skin
-                                        <span class="post-read-later post-read-later-guest tooltipstered" href="#" data-type="add" data-id="402"><i class="fa fa-bookmark-o"></i></span>
+                                        <span class="post-read-later post-read-later-guest " href="#" data-type="add" data-id="402"><i class="fa fa-bookmark-o"></i></span>
                                     </h2>
                                 </a>
                                 <div class="comment cmt1">
@@ -669,7 +761,7 @@
                                 </div>
                                 <a href="#" class="post_title">
                                     <h2 class="sz1"> Tips & Trick For Healthy Glowing Skin
-                                        <span class="post-read-later post-read-later-guest tooltipstered" href="#" data-type="add" data-id="402"><i class="fa fa-bookmark-o"></i></span>
+                                        <span class="post-read-later post-read-later-guest " href="#" data-type="add" data-id="402"><i class="fa fa-bookmark-o"></i></span>
                                     </h2>
                                 </a>
                                 <div class="comment cmt1">
@@ -690,7 +782,7 @@
                                 </div>
                                 <a href="#" class="post_title">
                                     <h2 class="sz1"> Tips & Trick For Healthy Glowing Skin
-                                        <span class="post-read-later post-read-later-guest tooltipstered" href="#" data-type="add" data-id="402"><i class="fa fa-bookmark-o"></i></span>
+                                        <span class="post-read-later post-read-later-guest " href="#" data-type="add" data-id="402"><i class="fa fa-bookmark-o"></i></span>
                                     </h2>
                                 </a>
                                 <div class="comment cmt1">
@@ -709,7 +801,6 @@
                 </div>
             </div>
           <!--newest-->
-        </div>
   </div>
   <div class="footer">
       <div class="content_footer">
@@ -736,7 +827,7 @@
               <div class="txt">
                   <a href="#" class="post_title">
                       <h5> Review Of Photoshop CC Editing Techniques
-                          <span class="post-read-later post-read-later-guest tooltipstered" href="#" data-type="add" data-id="402"><i class="fa fa-bookmark-o"></i></span>
+                          <span class="post-read-later post-read-later-guest" href="#" data-type="add" data-id="402"><i class="fa fa-bookmark-o"></i></span>
                       </h5>
                   </a>
                   <span class="post-date">
@@ -750,7 +841,7 @@
               <div class="txt">
                   <a href="#" class="post_title">
                       <h5> Drone Powered By AI Can Detect Obstacles
-                          <span class="post-read-later post-read-later-guest tooltipstered" href="#" data-type="add" data-id="402"><i class="fa fa-bookmark-o"></i></span>
+                          <span class="post-read-later post-read-later-guest" href="#" data-type="add" data-id="402"><i class="fa fa-bookmark-o"></i></span>
                       </h5>
                   </a>
                   <span class="post-date">
@@ -764,7 +855,7 @@
               <div class="txt">
                   <a href="#" class="post_title">
                       <h5> Review Of Healthy Breakfast Meals For Energy Boost
-                          <span class="post-read-later post-read-later-guest tooltipstered" href="#" data-type="add" data-id="402"><i class="fa fa-bookmark-o"></i></span>
+                          <span class="post-read-later post-read-later-guest" href="#" data-type="add" data-id="402"><i class="fa fa-bookmark-o"></i></span>
                       </h5>
                   </a>
                   <span class="post-date">
