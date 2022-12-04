@@ -20,6 +20,7 @@ body{
     flex-direction: column;
     justify-content: space-between;
     outline: none;
+    z-index: 1;
 }
 #show a{
     background-color: white;
@@ -264,12 +265,7 @@ img{
   }
   .post-meta span{color: whitesmoke;font-size: 11px;}
   .post-meta a:hover{color: gray;text-decoration: none;}
-  .a{
-    border-left: 1px solid silver;
-    border-right: 1px solid silver;
-    padding: 0 5px;
-    margin: 0 5px;
-  }
+
     .grid-item a h2, .grid-item a span{
         line-height: 130%;
         color: #fff !important;
@@ -453,9 +449,7 @@ img{
 #new_post{
     display: flex;
     justify-content: space-between;
-}
-#new_post a{
-    color: #393939;
+    margin-bottom: 50px;
 }
 .post_content{
     width: 70%;
@@ -578,6 +572,9 @@ img{
       color: #8d8d8d !important;
       font-size: 12px;
   }
+.box_content > div a:hover{
+    text-decoration: none !important;
+}
 .post_title h4 {
     text-align: left;
     line-height: 100%;
@@ -634,7 +631,62 @@ img{
     border-left: 1px solid rgba(255,255,255,0.1);
     width: 16%;
 }
-/*new              ------------------*/
+/*end new -----*/
+
+/*categories -----*/
+#new_post .fix{
+    margin-top: 30px;
+}
+.fl{
+    display: flex !important;
+    justify-content: space-between;
+}
+.category{
+    width: 48%;
+}
+.category .post-meta{margin: 5px 0 !important;}
+.category .sz2{
+    font-size: 20px !important;
+    letter-spacing: 0.8px;
+    margin-top: 15px !important;
+}
+#new_post .widget_content{
+    border-top: 1px solid whitesmoke;
+    padding-top: 20px;
+}
+.cl{text-align: left !important;}
+.cl h5{
+    color: #393939 !important;
+    margin-top: 10px;
+}
+.cl > div a{
+    text-decoration: none !important;
+}
+.cl h5:hover{
+    color: #1ca1f2 !important;
+}
+.cl > div span, .cl > div a{
+    font-size: 13px !important;
+    color: silver;
+}
+
+.tp{margin-top: 80px}
+.widget_fl img{
+    max-width: none !important;
+    width: 70px !important;
+    height: 70px !important;
+    display: block;
+}
+.widget_fl .cl h5{
+    margin-top: 0 !important;
+}
+.widget_fl .cl h5:hover{
+    color: gray !important;
+}
+
+/*end categories -----*/
+
+/* end new-post-categories              ------------------*/
 
 /*Tech Content*/
 .tech-grid {
@@ -672,11 +724,6 @@ img{
     margin: 0 10%;
     top: 70%;
     text-align: left;
-}
-.ps_tech .a{
-    border-right: none;
-    padding-left: 10px;
-    margin-left: 5px;
 }
 .ps_tech .post_title h1{
     font-size: 22px !important;
@@ -717,7 +764,7 @@ img{
     max-width: 100%;
     max-height: 100%;
     position: relative;
-    height: 250px;
+    height: 280px;
 }
 .grid_x {
     display: block;
@@ -795,6 +842,15 @@ img{
 .i17 {
     background:url(https://gillion.shufflehound.com/news/wp-content/uploads/sites/15/2017/01/27-420x265.jpg);
 }
+.i18 {
+    background:url(https://gillion.shufflehound.com/news/wp-content/uploads/sites/15/2018/06/c-1-420x265.jpg);
+}
+.i19 {
+    background:url(https://gillion.shufflehound.com/news/wp-content/uploads/sites/15/2019/01/Ball-420x265.jpg);
+}
+.i20 {
+    background:url(https://gillion.shufflehound.com/news/wp-content/uploads/sites/15/2018/06/c-3-420x265.jpg);
+}
 
 .post_title {
     display: block;
@@ -842,15 +898,21 @@ img{
 }
 
 .comment {
-    font-size: 10px;
-    letter-spacing:1px;
-    color: #8d8d8d ;
+    font-size: 12px;
+    color: silver ;
+}
+.comment a:hover, .comment span:hover {
+    color: gray;
+    text-decoration: none;
 }
 .comment a {
     color: #8d8d8d;
 }
 .subscribe {
     width: 25%;
+}
+.subscribe .flickity-prev-next-button {
+    margin-top: 180px !important;
 }
 .form_content{
     margin-top: 25px;
@@ -878,6 +940,7 @@ img{
 .fix {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 #home,#health{
     padding: 0;
@@ -916,42 +979,58 @@ img{
     margin-top: 5px;
     margin-bottom: 10px;
 }
-.txt1 {
-    font-size: 13px;
+.txt1 p{
+    font-size: 15px;
+    letter-spacing: 0.6px;
+    color: #393939;
 }
-.subscribe .nav-item a {
+.nv .nav-tabs {
+     border-bottom: none !important;
+}
+.nv .nav-item a {
     font-size: 12px;
     padding: 2px 5px !important;
     margin-right: 7px;
     font-style: normal;
-    color: #333;
+    color: #b1b1b1;
 }
-.subscribe .nav-item a.active {
-    border-radius: 5px !important;
+.nv .nav-item a.active {
+    border-radius: 7px !important;
     border: 1px solid rgb(236, 233, 233) !important;
     font-weight: bold;
 }
-.subscribe .nav-item a:hover {
-    color: #333;
+.nv .nav-item a:hover {
     border: none;
+    color: #b1b1b1;
 }
+.nv .nav-link{font-size: 15px !important;}
 
 /* footter  --------------------------------------------------------------------- */
 .footer{
   filter: brightness(95%);
-  padding: 30px 0 70px;
+  padding-top: 30px;
   background-image: linear-gradient(
-          rgba(0, 0, 0, 0.6),
-          rgba(0, 0, 0, 0.6)
+          rgba(0, 0, 0, 0.7),
+          rgba(0, 0, 0, 0.7)
   ), url("https://gillion.shufflehound.com/news/wp-content/uploads/sites/15/2018/11/footer-background.jpg?id=1964");
     background-position: center;
     background-size: 3000px;
 }
 .content_footer{
-  padding: 35px 15px 0;
+  padding: 35px 15px 70px;
   display: flex;
   color: white;
   justify-content: center;
+}
+.end_footer{
+    text-align: center;
+    background-color: rgba(35,35,35,0.7) !important;
+}
+.end_footer p{
+    color: #c0c0c0;
+    margin: 0;
+    padding: 50px 0;
+    font-size: 14px;
 }
 .content_footer > div{
   padding: 0 18px;
@@ -1018,7 +1097,6 @@ img{
 }
 .post_title h5 {
     font-size: 15px;
-    letter-spacing: 1px;
     display: inline-block;
     color: white;
 }
